@@ -26,9 +26,6 @@ public class Client extends User {
     }
 
     public void receiveCashback(double value) {
-        if (planType == PlanType.PREMIUM) {
-            value *= 2;
-        }
-        this.cashbackBalance += value;
+        this.cashbackBalance += value * planType.cashMultiplier();
     }
 }
