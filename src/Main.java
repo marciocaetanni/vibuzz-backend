@@ -12,7 +12,7 @@ public class Main {
             true
         );
 
-        client.addCashback(20.0);
+        client.receiveCashback(20.0);
 
         System.out.println("Cliente: " + client.getName());
         System.out.println("Cashback: " + client.getCashbackBalance());

@@ -25,7 +25,10 @@ public class Client extends User {
         return premium;
     }
 
-    public void addCashback(double value) {
+    public void receiveCashback(double value) {
+        if (premium) {
+            value *= 2;
+        }
         this.cashbackBalance += value;
     }
 }
