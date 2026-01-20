@@ -1,5 +1,6 @@
 import model.Client;
 import model.Establishment;
+import model.PlanType;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +10,7 @@ public class Main {
             "Márcio", 
             "marcio@marcio.com", 
             "1234567890", 
-            true
+            PlanType.PREMIUM
         );
 
         client.receiveCashback(20.0);

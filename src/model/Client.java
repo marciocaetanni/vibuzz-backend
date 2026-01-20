@@ -3,17 +3,17 @@ package model;
 public class Client extends User {
 
     private double cashbackBalance;
-    private final boolean premium;
+    private final PlanType planType;
     
     public Client(
     Long id,
     String name, 
     String email, 
     String password,
-    boolean premium
+    PlanType planType
     ) {
         super(id, name, email, password);
-        this.premium = premium;
+        this.planType = planType;
         this.cashbackBalance = 0.0;
     }
 
@@ -21,12 +21,12 @@ public class Client extends User {
         return cashbackBalance;
     }
 
-    public boolean isPremium() {
-        return premium;
+    public PlanType planType() {
+        return planType;
     }
 
     public void receiveCashback(double value) {
-        if (premium) {
+        if (planType == PlanType.PREMIUM) {
             value *= 2;
         }
         this.cashbackBalance += value;
