@@ -2,17 +2,17 @@ package model.menu;
 
 public class MenuItem {
     
-    // Atributos da classe
+    // Class attributes
     private final Long id;
     private final String name;
     private final String description;
     private double price;
     private final String category;
-    private final Long establishmentId;  // ID do estabelecimento dono deste item
+    private final Long establishmentId;  // ID of the establishment that owns this item
     private boolean available;
     private String imagePath;
 
-    // Construtor - método especial para criar objetos MenuItem
+    // Constructor - special method to create MenuItem objects
     public MenuItem(
         Long id,
         String name,
@@ -27,11 +27,11 @@ public class MenuItem {
         this.price = price;
         this.category = category;
         this.establishmentId = establishmentId;
-        this.available = true;  // Por padrão, o item está disponível
-        this.imagePath = null;  // Pode ser adicionado depois
+        this.available = true;  // By default, item is available
+        this.imagePath = null;  // Can be added later
     }
 
-    // Getters - métodos para ACESSAR os valores dos atributos
+    // Getters - methods to ACCESS attribute values
     public Long getId() {
         return id;
     }
@@ -64,9 +64,9 @@ public class MenuItem {
         return imagePath;
     }
 
-    // Setters - métodos para MODIFICAR valores (apenas para atributos que podem mudar)
+    // Setters - methods to MODIFY values (only for attributes that can change)
     public void setPrice(double price) {
-        if (price >= 0) {  // Validação: preço não pode ser negativo
+        if (price >= 0) {  // Validation: price cannot be negative
             this.price = price;
         }
     }
@@ -79,12 +79,12 @@ public class MenuItem {
         this.imagePath = imagePath;
     }
 
-    // Método de negócio - desabilita o item
+    // Business method - disables the item
     public void disable() {
         this.available = false;
     }
 
-    // Método de negócio - habilita o item
+    // Business method - enables the item
     public void enable() {
         this.available = true;
     }

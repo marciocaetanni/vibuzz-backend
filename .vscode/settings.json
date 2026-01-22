@@ -1,0 +1,17 @@
+{
+    // Configures where .class files will be compiled
+    "java.project.outputPath": "bin",
+    
+    // Configures the source files path
+    "java.project.sourcePaths": ["src"],
+    
+    // Hides the bin folder from VSCode view
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true
+    }
+}

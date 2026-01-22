@@ -1,17 +1,18 @@
-# Compiled files from Java
+# Java compiled files
 *.class
 *.jar
 *.war
 *.ear
 
-# Build files
+# Build folders
 bin/
 out/
 target/
 build/
 
-# IDEs files
-.vscode/
+# IDE files (but keep .vscode/settings.json)
+.vscode/*
+!.vscode/settings.json
 .idea/
 *.iml
 .settings/
