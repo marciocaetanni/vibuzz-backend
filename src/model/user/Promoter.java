@@ -1,4 +1,4 @@
-package model;
+package model.user;
 
 public class Promoter extends User {
     private final String companyName;

@@ -1,4 +1,6 @@
-package model;
+package model.user;
+
+import model.enums.PlanType;
 
 public class Client extends User {
 

@@ -1,6 +1,6 @@
 package service;
 
-import model.Client;
+import model.user.Client;
 
 public class CashbackService {
     public void applyCashback(Client client, double purchaseValue) {

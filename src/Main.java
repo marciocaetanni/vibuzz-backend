@@ -1,6 +1,6 @@
-import model.Client;
-import model.Establishment;
-import model.PlanType;
+import model.enums.PlanType;
+import model.user.Client;
+import model.user.Establishment;
 import service.CashbackService;
 
 public class Main {

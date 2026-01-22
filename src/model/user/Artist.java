@@ -1,4 +1,4 @@
-package model;
+package model.user;
 
 public class Artist extends User {
     private final String artisticName;
